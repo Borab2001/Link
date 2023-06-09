@@ -13,6 +13,7 @@ export default function Home() {
             sm:px-6
             lg:px-8
             bg-gray-100
+            dark:bg-zinc-900
         ">
             <div className="sm:mx-auto sm:w-full sm:max-w-md">
                 <Image
@@ -29,6 +30,7 @@ export default function Home() {
                     font-bold
                     tracking-tight
                     text-gray-900
+                    dark:text-white
                 ">
                     Sign in to your account
                 </h2>
