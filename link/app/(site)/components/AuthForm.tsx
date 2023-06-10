@@ -2,9 +2,11 @@
 
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import { BsGoogle, BsGithub } from "react-icons/bs";
 
 import Input from "@/app/components/inputs/Input";
 import Button from "@/app/components/Button";
+import AuthSocialButton from "./AuthSocialButton";
 
 type Variant = 'LOGIN' | 'REGISTER';
 
@@ -103,13 +105,42 @@ const AuthForm = () => {
                             <div className="w-full border-t border-gray-300" />
                         </div>
                         <div className="relative flex justify-center text-sm">
-                            <span className="bg-white px-2 text-gray-500">
+                            <span className="bg-white dark:bg-zinc-800 px-2 text-gray-500 dark:text-gray-100">
                                 Or continue with
                             </span>
                         </div>
                     </div>
 
-                    <div className="mt-6 flex gap-2"></div>
+                    <div className="mt-6 flex gap-2">
+                        <AuthSocialButton
+                            icon={BsGoogle}
+                            onClick={() => socialAction('google')}                    
+                        />
+                        <AuthSocialButton
+                            icon={BsGithub}
+                            onClick={() => socialAction('github')}                    
+                        />
+                    </div>
+                </div>
+
+                <div className="
+                    flex
+                    gap-2
+                    justify-center
+                    text-sm
+                    mt-6
+                    px-2
+                    text-gray-500
+                ">
+                    <div>
+                        {variant === 'LOGIN' ? 'First time on Link?' : 'Already have an account?'}
+                    </div>
+                    <div 
+                        onClick={toggleVariant}
+                        className="underline cursor-pointer"
+                    >
+                        {variant === 'LOGIN' ? 'Create an account' : 'Sign in'}
+                    </div>
                 </div>
             </div>
         </div>
