@@ -2,6 +2,7 @@
 
 import useRoutes from "@/app/hooks/useRoutes";
 import { useState } from "react";
+import DesktopItem from "./DesktopItem";
 
 const DesktopSidebar = () => {
     const routes = useRoutes();
@@ -21,6 +22,8 @@ const DesktopSidebar = () => {
                 lg:bg-white
                 dark:lg:bg-zinc-800
                 lg:border-r-[1px]
+                border-white
+                dark:border-zinc-900
                 lg:pb-4
                 lg:flex
                 lg:flex-col
