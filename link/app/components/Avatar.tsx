@@ -38,7 +38,7 @@ const Avatar: React.FC<AvatarProps> = ({
                     bg-green-500
                     ring-2
                     ring-white
-                    dark:ring-zinc-900
+                    dark:ring-zinc-800
                     top-0
                     right-0
                     h-2
