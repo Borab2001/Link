@@ -8,7 +8,7 @@ import {
     useForm
 } from "react-hook-form";
 import { HiPhoto } from "react-icons/hi2";
-// import { PiPaperPlaneRightFill } from "react-icons/"
+import { PiPaperPlaneRightFill } from "react-icons/pi"
 import MessageInput from "./MessageInput";
 
 const Form = () => {
@@ -75,10 +75,10 @@ const Form = () => {
                         hover:bg-indigoDarker
                     "
                 >
-                    {/* <PiPaperPlaneRightFill 
+                    <PiPaperPlaneRightFill 
                         size={18}
-                        classname="text-white" 
-                    /> */}
+                        className="text-white" 
+                    />
                 </button>
             </form>
         </div>

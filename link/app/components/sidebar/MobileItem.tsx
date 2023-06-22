@@ -41,6 +41,7 @@ const MobileItem: React.FC<MobileItemProps> = ({
                 hover:bg-gray-100
                 dark:hover:text-white
                 dark:hover:bg-zinc-900
+                transition
             `,
                 active && 'bg-gray-100 dark:bg-zinc-900 text-black dark:text-white'
             )}

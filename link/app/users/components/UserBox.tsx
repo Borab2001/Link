@@ -38,7 +38,7 @@ const UserBox: React.FC<UserBoxProps> = ({
                 items-center
                 space-x-3
                 bg-white
-                dark:bg-zinc-900
+                dark:bg-neutral-950
                 p-3
                 hover:bg-neutral-100
                 dark:hover:bg-zinc-900
