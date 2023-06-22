@@ -7,6 +7,8 @@ import {
     SubmitHandler,
     useForm
 } from "react-hook-form";
+import { HiPhoto } from "react-icons/hi2";
+import MessageInput from "./MessageInput";
 
 const Form = () => {
     const { conversationId } = useConversation();
@@ -33,8 +35,36 @@ const Form = () => {
     };
 
     return (
-        <div>
-            Form
+        <div
+            className="
+                py-4
+                px-4
+                bg-white
+                dark:bg-zinc-800
+                border-t
+                flex
+                items-center
+                gap-2
+                lg:gap-4
+                w-full
+            "
+        >
+            <HiPhoto 
+                size={30} 
+                className="text-indigo" 
+            />
+            <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="flex items-center gap-2 lg:gap-4 w-full"
+            >
+                <MessageInput
+                    id="message"
+                    register={register}
+                    errors={errors}
+                    required
+                    placeholder="Write a message"
+                />
+            </form>
         </div>
     );
 }
