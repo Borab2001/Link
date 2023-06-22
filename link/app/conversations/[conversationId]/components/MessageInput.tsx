@@ -20,8 +20,26 @@ const MessageInput: React.FC<MessageInputProps> = ({
     errors
 }) => {
     return (
-        <div>
-            Message Input
+        <div className="relative w-full">
+            <input
+                id={id}
+                type={type}
+                autoComplete={id}
+                {...register(id, { required })}
+                placeholder={placeholder}
+                className="
+                    text-black
+                    dark:text-white
+                    font-light
+                    py-2
+                    px-4
+                    bg-neutral-100
+                    dark:bg-neutral-900
+                    w-full
+                    rounded-full
+                    focus:outline-none
+                "
+            />
         </div>
     );
 }

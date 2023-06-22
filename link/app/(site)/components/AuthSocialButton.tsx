@@ -32,6 +32,7 @@ const AuthSocialButton: React.FC<AuthSocialButtonProps> = ({
                 hover:bg-gray-50
                 dark:hover:bg-zinc-500
                 focus:outline-offset-0
+                transition
             "
         >
             <Icon />

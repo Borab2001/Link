@@ -36,7 +36,7 @@ const ConversationList: React.FC<ConversationListProps> = ({
                 overflow-y-auto
                 border-r
                 bg-white
-                dark:bg-zinc-800
+                dark:bg-neutral-950
                 border-gray-200
                 dark:border-zinc-800
             `,
@@ -57,7 +57,10 @@ const ConversationList: React.FC<ConversationListProps> = ({
                             text-gray-600
                             dark:text-gray-400
                             cursor-pointer
-                            hover:opacity-75
+                            hover:bg-gray-200
+                            hover:text-black
+                            dark:hover:text-white
+                            dark:hover:bg-zinc-800
                             transition
                         "
                     >

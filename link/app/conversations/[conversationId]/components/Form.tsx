@@ -8,6 +8,7 @@ import {
     useForm
 } from "react-hook-form";
 import { HiPhoto } from "react-icons/hi2";
+// import { PiPaperPlaneRightFill } from "react-icons/"
 import MessageInput from "./MessageInput";
 
 const Form = () => {
@@ -64,6 +65,21 @@ const Form = () => {
                     required
                     placeholder="Write a message"
                 />
+                <button
+                    type="submit"
+                    className="
+                        rounded-full
+                        p-2
+                        bg-indigo
+                        cursor-pointer
+                        hover:bg-indigoDarker
+                    "
+                >
+                    {/* <PiPaperPlaneRightFill 
+                        size={18}
+                        classname="text-white" 
+                    /> */}
+                </button>
             </form>
         </div>
     );

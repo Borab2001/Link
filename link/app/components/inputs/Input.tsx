@@ -48,7 +48,7 @@ const Input: React.FC<InputProps> = ({
                         ring-1
                         ring-inset
                         ring-gray-300
-                        dark:ring-gray-100
+                        dark:ring-gray-400
                         placeholder:text-gray-400
                         focus:ring-2
                         focus:ring-inset

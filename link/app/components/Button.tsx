@@ -37,6 +37,7 @@ const Button: React.FC<ButtonProps> = ({
                 focus-visible:outline
                 focus-visible:outline-2
                 focus-visible:outline-offset-2
+                transition
             `,
             disabled && "opacity-50 cursor-default",
             fullWidth && "w-full",
