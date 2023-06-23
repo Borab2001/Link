@@ -20,8 +20,6 @@ const Avatar: React.FC<AvatarProps> = ({
                     overflow-hidden
                     h-9
                     w-9
-                    md:h-11
-                    md:w-11
                 "
             >
                 <Image 
@@ -41,10 +39,8 @@ const Avatar: React.FC<AvatarProps> = ({
                     dark:ring-zinc-800
                     top-0
                     right-0
-                    h-2
-                    w-2
-                    md:h-3
-                    md:w-3
+                    h-2.5
+                    w-2.5
                 " 
             />
         </div>
