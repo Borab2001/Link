@@ -86,8 +86,8 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
             <Avatar user={otherUser} />
             <div className="min-w-0 flex-1">
                 <div className="focus:outline-none">
-                    <div className="flex justify-between items-center mb-1">
-                        <p className="text-md font-medium text-gray-900 dark:text-gray-100">
+                    <div className="flex justify-between items-center mb-0.5">
+                        <p className="text-sm font-medium text-gray-900 dark:text-gray-100">
                             {data.name || otherUser.name}
                         </p>
                         {lastMessage?.createdAt && (
@@ -98,7 +98,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
                     </div>
                     <p className={clsx(`
                         truncate
-                        text-sm
+                        text-xs
                     `,
                             hasSeen ? 'text-gray-500' : 'text-black dark:text-white font-medium'
                     )}>

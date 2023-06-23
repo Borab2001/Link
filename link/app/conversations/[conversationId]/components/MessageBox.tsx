@@ -29,7 +29,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({
         isOwn && "justify-end"
     );
 
-    const avatar = clsx(isOwn && "order-2 pt-7");
+    const avatar = clsx(isOwn && "order-2");
 
     const body = clsx(
         "flex flex-col gap-2",
@@ -44,7 +44,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({
 
     return (
         <div className={container}>
-            <div className={avatar}>
+            <div className={`${avatar} pt-7`}>
                 <Avatar user={data.sender} />
             </div>
             <div className={body}>
