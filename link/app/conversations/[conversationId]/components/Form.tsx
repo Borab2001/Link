@@ -49,8 +49,9 @@ const Form = () => {
                 py-4
                 px-4
                 bg-white
-                dark:bg-zinc-800
+                dark:bg-zinc-950
                 border-t
+                dark:border-zinc-800
                 flex
                 items-center
                 gap-2

@@ -32,10 +32,11 @@ const Header: React.FC<HeaderProps> = ({
         <div
             className="
                 bg-white
-                dark:bg-zinc-800
+                dark:bg-zinc-950
                 w-full
                 flex
                 border-b-[1px]
+                dark:border-zinc-800
                 sm:px-4
                 py-3
                 px-4
