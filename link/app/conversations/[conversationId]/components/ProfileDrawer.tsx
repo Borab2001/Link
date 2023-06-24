@@ -56,7 +56,6 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                             fixed
                             inset-0
                             bg-black
-                            dark:bg-white
                             bg-opacity-40
                         "
                     />
@@ -144,7 +143,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                                 <div className="mb-2">
                                                     <Avatar user={otherUser} />
                                                 </div>
-                                                <div>
+                                                <div className="text-black dark:text-white">
                                                     {title}
                                                 </div>
                                                 <div className="text-sm text-gray-500">
@@ -167,11 +166,11 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                                                 w-10
                                                                 h-10
                                                                 bg-neutral-100
-                                                                dark:bg-neutral-900
                                                                 rounded-full
                                                                 flex
                                                                 items-center
                                                                 justify-center
+                                                                transition
                                                             "
                                                         >
                                                             <IoTrash size={20} />
