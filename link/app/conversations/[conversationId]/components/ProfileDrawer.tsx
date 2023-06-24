@@ -5,7 +5,7 @@ import { Conversation, User } from "@prisma/client";
 import { Fragment, useMemo } from "react";
 import { format } from "date-fns";
 import { Dialog, Transition } from "@headlessui/react";
-import { IoClose } from "react-icons/io5";
+import { IoClose, IoTrash } from "react-icons/io5";
 import Avatar from "@/app/components/Avatar";
 
 interface ProfileDrawerProps {
@@ -142,7 +142,41 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                         <div className="relative mt-6 flex-1 px-4 sm:px-6">
                                             <div className="flex flex-col items-center">
                                                 <div className="mb-2">
-                                                    <Avatar user={other.user} />
+                                                    <Avatar user={otherUser} />
+                                                </div>
+                                                <div>
+                                                    {title}
+                                                </div>
+                                                <div className="text-sm text-gray-500">
+                                                    {statusText}
+                                                </div>
+                                                <div className="flex gap-10 my-8">
+                                                    <div 
+                                                        onClick={() => {}}
+                                                        className="
+                                                            flex
+                                                            flex-col
+                                                            gap-3
+                                                            items-center
+                                                            cursor-pointer
+                                                            hover:opacity-75
+                                                        "
+                                                    >
+                                                        <div
+                                                            className="
+                                                                w-10
+                                                                h-10
+                                                                bg-neutral-100
+                                                                dark:bg-neutral-900
+                                                                rounded-full
+                                                                flex
+                                                                items-center
+                                                                justify-center
+                                                            "
+                                                        >
+                                                            <IoTrash />
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
