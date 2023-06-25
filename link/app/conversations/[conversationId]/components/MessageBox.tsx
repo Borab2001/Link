@@ -52,7 +52,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({
                     <div className="text-sm text-gray-500">
                         {data.sender.name}
                     </div>
-                    <div className="text-xs text-gray-400 dark:text-gray-600">
+                    <div className="text-sm text-gray-400 dark:text-gray-600">
                         {format(new Date(data.createdAt), 'p')}
                     </div>
                 </div>

@@ -75,6 +75,7 @@ const Modal: React.FC<ModalProps> = ({
                                     dark:bg-zinc-950
                                     px-4
                                     pb-4
+                                    pt-5
                                     text-left
                                     shadow-xl
                                     transition-all
