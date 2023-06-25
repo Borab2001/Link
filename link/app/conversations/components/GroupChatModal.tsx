@@ -1,6 +1,7 @@
 "use client";
 
 import Input from "@/app/components/inputs/Input";
+import Select from "@/app/components/inputs/Select";
 import Modal from "@/app/components/Modal";
 import { User } from "@prisma/client";
 import axios from "axios";
@@ -100,6 +101,18 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({
                                 disabled={isLoading}
                                 required
                                 errors={errors}
+                            />
+                            <Select
+                                disabled={isLoading}
+                                label="Members"
+                                options={users.map((user) => ({
+                                    value: user.id,
+                                    label: user.name
+                                }))}
+                                onChange={(value) => setValue('members', value, {
+                                    shouldValidate: true
+                                })}
+                                value={members}
                             />
                         </div>
                     </div>
