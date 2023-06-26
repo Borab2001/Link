@@ -39,11 +39,9 @@ const Button: React.FC<ButtonProps> = ({
                 focus-visible:outline-offset-2
                 transition
                 min-w-[72px]
-                w-full
-                md:w-auto
             `,
             disabled && "opacity-50 cursor-default",
-            fullWidth && "w-full",
+            fullWidth ? "w-full" : "w-full sm:w-auto",
             secondary ? "text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-neutral-800" : "text-white",
             danger && "bg-rose-500 hover:bg-rose-600 focus-visible:outline-rose-600",
             !secondary && !danger && "bg-indigo hover:bg-indigoDarker focus-visible:outline-indigoDark"

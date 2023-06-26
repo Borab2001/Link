@@ -94,8 +94,10 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
                 className="
                     mt-5
                     sm:mt-4
-                    sm:flex
+                    flex
+                    flex-col
                     sm:flex-row-reverse
+                    gap-2
                 "
             >
                 <Button
