@@ -66,7 +66,7 @@ const Form = () => {
             >
                 <HiPhoto 
                     size={30} 
-                    className="text-indigo" 
+                    className="text-indigo hover:text-indigoDarker" 
                 />
             </CldUploadButton>
             <form

@@ -8,6 +8,33 @@ body,
   height: 100%;
 }
 
-body.dark {
-  background-color: rgb(10,10,10);
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(10,10,10);
+  }
+}
+
+*::selection {
+  background-color: #4F46E5;
+  color: #fff;
+}
+
+*::-moz-selection {
+  background-color: #4F46E5;
+  color: #fff;
+}
+
+*::-o-selection {
+  background-color: #4F46E5;
+  color: #fff;
+}
+
+*::-ms-selection {
+  background-color: #4F46E5;
+  color: #fff;
+}
+
+*::-webkit-selection {
+  background-color: #4F46E5;
+  color: #fff;
 }
