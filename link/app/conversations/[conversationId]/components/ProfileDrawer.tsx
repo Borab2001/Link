@@ -52,10 +52,10 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                 <Dialog as="div" className="relative z-50" onClose={onClose}>
                     <Transition.Child
                         as={Fragment}
-                        enter="ease-out duration-500"
+                        enter="ease-out duration-300"
                         enterFrom="opacity-0"
                         enterTo="opacity-100"
-                        leave="ease-in duration-500"
+                        leave="ease-in duration-300"
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
@@ -96,10 +96,10 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                             >
                                 <Transition.Child
                                     as={Fragment}
-                                    enter="transform transition ease-in-out duration-500"
+                                    enter="transform transition ease-in-out duration-300"
                                     enterFrom="translate-x-full"
                                     enterTo="translate-x-0"
-                                    leave="transform transition east-in-out duration-500"
+                                    leave="transform transition ease-in-out duration-300"
                                     leaveTo="translate-x-full"
                                 >
                                     <Dialog.Panel
