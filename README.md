@@ -1,5 +1,5 @@
 # Link
 Real-time chat app
 
-##Tech Stack
+## Tech Stack
 React, Next.js, TailwindCSS, Prisma, MongoDB & NextAuth
