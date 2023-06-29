@@ -95,6 +95,12 @@ export async function POST(
             }
         });
 
+        newConversation.users.map((user) => {
+            if (user.email) {
+                pusherServer.trigger(user.email, 'conversation:new', newConversation);
+            }
+        })
+
         return NextResponse.json(newConversation);
     } catch (error: any) {
         return new NextResponse('Internal Error', { status: 500 });
