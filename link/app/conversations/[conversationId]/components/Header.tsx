@@ -70,6 +70,7 @@ const Header: React.FC<HeaderProps> = ({
                             cursor-pointer
                         "
                         href="/conversations"
+                        passHref
                     >
                         <HiChevronLeft size={32} />
                     </Link>
