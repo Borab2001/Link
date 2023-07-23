@@ -12,6 +12,7 @@ export default async function ConversationsLayout({
     const users = await getUsers();
 
     return (
+        // @ts-ignore Server Component
         <Sidebar>
             <div className="h-full">
                 <ConversationList
