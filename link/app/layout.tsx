@@ -5,6 +5,8 @@ import ToasterContext from './context/ToasterContext'
 import AuthContext from './context/AuthContext'
 import ActiveStatus from './components/ActiveStatus'
 
+import { Analytics } from '@vercel/analytics/react';
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -25,6 +27,7 @@ export default function RootLayout({
           <ActiveStatus />
           {children}
         </AuthContext>
+        <Analytics />
       </body>
     </html>
   )
